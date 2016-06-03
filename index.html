@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>A simple map</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/simple-statistics/1.0.1/simple_statistics.js'></script>
+	<script src='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.js'></script>
+	<script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.2.0/leaflet-omnivore.min.js'></script>
+	<script src='https://code.jquery.com/jquery-1.12.0.min.js'></script>
+
+	<link href='https://api.mapbox.com/mapbox.js/v2.2.4/mapbox.css' rel='stylesheet' />
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+    <link href='css/styles.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+	<div id='map'></div>
+	<div id='side-panel'>
+		<h1>Kenya's HIV infection rate by gender</h1>
+		<h2>2014 enrollment rates for boys and girls</h2>
+		<p>The HIV pandemic is most severe in sub-Sahara Africa. The World Health Organization estimates that Africa is home to three out of four HIV related deaths in 2014. African women remain at a much higher risk of infection and HIV remains the leading cause of death of women of the reproductive age. Still, women are not receiving life-saving services, antiretroviral treatment, testing, or education. Planning for delivery of services is an immense task and African countries are often employing global or regional data in service development and deployment. There are local trends in HIV infection that, once visualized, can maximize the benefit of services provided.
+		</p>
+		<!--<p><img src="images/legend.png" alt="legend"></p>-->
+		<p></p>
+		<h2>About this map</h2>
+		<p>This map visualizes HIV occurrence by gender and Kenyan county.</p>
+		<h2>About the data</h2>
+		<p> Kenya’s Open Data Portal houses collections of data stretching across many themes and provided in easily accessible data structures. Kenya’s data portal provides a “Gender based HIV prevalence per county” dataset. </p>
+	</div>
+	<div id='ui-slider'>
+		<input type="range" min="1" value="1" max="8" step="1" class="slider">
+	</div>
+	<div id="download">
+		<p><a href="Kenya_HIV_Gender.csv" download="Kenya_HIV_2014.csv">Download Data</a>
+		</p>
+	</div>
+	<!--
+	<div id="legend">
+		<h3>2014 HIV Infection Rates by County</h3>
+		<svg class="legend" width="200" height="200"></svg>
+	</div>
+-->
+	<div id="info">
+		<p>County: <span></span>
+		</p>
+		<p class="women">Female <span></span>: <span></span>
+		</p>
+		<p class="men">Male <span></span>: <span></span>
+		</p>
+	</div>
+    
+    <script src='js/main.js'></script>
+
+</body>
+
+
+</html>
