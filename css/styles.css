@@ -48,12 +48,9 @@ body {
     text-align: center;
     font-size: 9px;
     color: #808080;
-	z-index: 200
 }
 
-#legend{
-	z-index: 300
-}
+
 
 #info {
     padding: 8px 15px;
@@ -115,6 +112,17 @@ h2 {
     text-align: left;
      font-family: Montserrat;
 }
+h3 {
+    margin: 0;
+    padding: 8px 25px 8px 15px;
+    color: #047d50;
+    font-weight: 200;
+    font-size: 1.2em;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+
 
 #side-panel p {
     margin: 8px 0 4px;
@@ -146,4 +154,29 @@ a {
     text-decoration: none;
     font-size: 1.2em;
     font-weight: bold;
+}
+#legend span {
+    display: block;
+    border-radius: 5px;
+    float: right;
+    height: 20px;
+    width: 20px;
+    text-align: right;
+    color: #047d50;
+    margin-right: 10px;
+	border: 2px solid #047d50;
+}
+#legend {
+	border: 3px solid #047d50;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    margin: 0 0 5px 5px;
+    padding: 0 5px 0 5px;
+    background: whitesmoke;
+    border: 2px solid #047d50;
+    border-radius: 3px;
+    color: #047d50;
+    width: 160px;
+	opacity: .9
 }
