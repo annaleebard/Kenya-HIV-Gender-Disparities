@@ -48,6 +48,11 @@ body {
     text-align: center;
     font-size: 9px;
     color: #808080;
+	z-index: 200
+}
+
+#legend{
+	z-index: 300
 }
 
 #info {
